@@ -7,6 +7,7 @@ using EFDataAccessLibrary.DataAccess;
 using EFDataAccessLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace EFDedWeb.Pages
@@ -23,9 +24,22 @@ namespace EFDedWeb.Pages
 
         public void OnGet()
         {
+            LoadSampleData();
 
+            var people = _db.People
+                .Include(a => a.Addresses)
+                .Include(e => e.EmailAddresses)
+                //.ToList()
+                //.Where(x => ApprovedAge(x.Age));
+                .Where(x => x.Age >= 28 && x.Age <= 35)
+                .ToList();
         }
-        public void LoadSampleData() 
+
+        private bool ApprovedAge(int age)
+        {
+            return (age >= 28 && age <= 35);              
+        }
+        public void LoadSampleData()
         {
             if (_db.People.Count() == 0)
             {
