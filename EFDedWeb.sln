@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDedWeb", "EFDedWeb\EFDedWeb.csproj", "{34C78EE9-A920-4AD4-93CE-0AF09978F56B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFDedWeb", "EFDedWeb\EFDedWeb.csproj", "{34C78EE9-A920-4AD4-93CE-0AF09978F56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDataAccessLibrary", "EFDataAccessLibrary\EFDataAccessLibrary.csproj", "{FF1BBF6B-69F2-463C-9DBC-382BAB4475CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{34C78EE9-A920-4AD4-93CE-0AF09978F56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34C78EE9-A920-4AD4-93CE-0AF09978F56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34C78EE9-A920-4AD4-93CE-0AF09978F56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1BBF6B-69F2-463C-9DBC-382BAB4475CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1BBF6B-69F2-463C-9DBC-382BAB4475CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1BBF6B-69F2-463C-9DBC-382BAB4475CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1BBF6B-69F2-463C-9DBC-382BAB4475CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
